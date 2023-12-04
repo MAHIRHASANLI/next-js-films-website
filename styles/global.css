@@ -1,0 +1,36 @@
+body {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+body::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.9) 30%,
+    rgba(0, 0, 0, 0.7) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr min(1440px, 94%) 1fr;
+  grid-template-rows: 96px auto 72px;
+}
+
+.container > * {
+  grid-column: 2;
+}
+
+.container > .fluid {
+  grid-column: 1 / -1;
+}

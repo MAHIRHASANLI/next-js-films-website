@@ -1,0 +1,67 @@
+.movieWrapper {
+  padding-top: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.movieWrapper h1 {
+  font-size: 36px;
+  width: 80%;
+}
+
+.movieWrapper p {
+  width: 50%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.buttons a {
+  padding: 12px 80px;
+  border: 1px solid white;
+  background: white;
+  border-radius: 20px;
+  color: black;
+}
+
+.buttons button {
+  background: transparent;
+  border: none;
+}
+
+.buttons button svg {
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 10px;
+  color: white;
+}
+
+/* .moviePosterOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.9) 30%,
+    rgba(0, 0, 0, 0.7) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+} */
+
+.moviePoster img {
+  z-index: -2;
+  object-fit: cover;
+}

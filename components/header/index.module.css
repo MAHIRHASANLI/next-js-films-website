@@ -1,0 +1,30 @@
+.header {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
+}
+
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  letter-spacing: -1;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fafafa;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navigationMenu {
+  letter-spacing: -1;
+  font-weight: 700;
+  display: flex;
+  gap: 48px;
+}
+
+.navigationMenu a {
+  color: #fafafa;
+}

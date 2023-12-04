@@ -1,0 +1,12 @@
+.categories {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 35px;
+}
+
+.category {
+  padding: 13px 25px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 10px;
+}
