@@ -5,7 +5,6 @@ import Image from 'next/image'
 import css from "./index.module.css"
 
 const MoviesSection = ({ title, movies }) => {
-    console.log(movies);
     return (
         <div className={css.moviesSection}>
             <h3 className={css.title}>{title}</h3>

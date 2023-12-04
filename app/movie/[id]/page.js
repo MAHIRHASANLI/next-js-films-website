@@ -8,8 +8,8 @@ const delay = async (ms) => {
     return new Promise((resolve) => setTimeout(resolve, ms))
 }
 
-const MovidePage = ({ params, searchParams }) => {
-    delay(2000)
+const MovidePage = async ({ params, searchParams }) => {
+    await delay(2000)
     const movieDetail = Movies.results.find(movie => movie.id.toString() === params.id);
     if (!movieDetail) notFound();
 

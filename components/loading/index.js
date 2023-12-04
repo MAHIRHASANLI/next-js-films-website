@@ -2,7 +2,7 @@ import React from 'react'
 
 import css from "./index.module.css"
 
-const LoadingContainer = () => {
+const LoadingComponent = () => {
     return (
         <div className={css.loadingWrapper}>
             <div className={css.ldsRing}>
@@ -15,4 +15,4 @@ const LoadingContainer = () => {
     )
 }
 
-export default LoadingContainer
+export default LoadingComponent

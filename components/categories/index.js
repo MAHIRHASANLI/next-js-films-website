@@ -7,7 +7,7 @@ const Categoies = ({ categories }) => {
     return (
         <div className={css.categories}>
             {
-                categories.map((category) => (
+                categories?.map((category) => (
                     <Link href={`/${category.id}`} key={category.id} className={css.category}>
                         <div className={css.name}>{category.name}</div>
                     </Link>
